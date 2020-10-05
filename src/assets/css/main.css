@@ -191,7 +191,7 @@ header.about {
 .biglogo {
   width: 620px;
   height: 612px;
-  background: url("/assets/images/logoV-big.png");
+  background: url("../images/logoV-big.png");
 }
 
 /*custom navbar */
@@ -431,7 +431,7 @@ button:focus {
 }
 
 .container .bg-top-right {
-  background: url("/assets/images/students.jpg?v=1");
+  background: url("../images/students.jpg?v=1");
   position: absolute;
   z-index: 1;
   top: -60px;
@@ -467,7 +467,7 @@ button:focus {
   width: 105px;
   height: 330px;
   position: absolute;
-  background: url(/assets/images/bg-small-left.png);
+  background: url(../images/bg-small-left.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -686,7 +686,7 @@ button:focus {
   z-index: 2;
   width: 55%;
   height: 420px;
-  background-image: url("/assets/images/students.jpg?v=1");
+  background-image: url("../images/students.jpg?v=1");
   background-position: 34% center;
 }
 
@@ -697,7 +697,7 @@ button:focus {
   z-index: 2;
   width: 55%;
   height: 42%;
-  background-image: url("/assets/images/students.jpg?v=1");
+  background-image: url("../images/students.jpg?v=1");
   background-position: 34% center;
 }
 
@@ -708,7 +708,7 @@ button:focus {
   z-index: 1;
   width: 60%;
   height: 500px;
-  background: url("/assets/images/white-background-hexagon.jpg");
+  background: url("../images/white-background-hexagon.jpg");
   background-size: cover;
 }
 
