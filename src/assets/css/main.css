@@ -191,7 +191,7 @@ header.about {
 .biglogo {
   width: 620px;
   height: 612px;
-  background: url("assets/images/logoV-big.png");
+  background: url("/assets/images/logoV-big.png");
 }
 
 /*custom navbar */
