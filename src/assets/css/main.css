@@ -365,8 +365,8 @@ button:focus {
 }
 
 .header-content-panel {
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: visibility  .3s  linear,opacity  .3s  linear;
   transition: visibility  .3s  linear,opacity  .3s  linear;
 }

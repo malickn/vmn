@@ -312,32 +312,27 @@ $max-width: 1300px;
     opacity: 0;
   }
   
-  .header-content-initial {
-    opacity: 1;
-    visibility: visible;
+  @mixin visibility($opacity, $visibility){
+    opacity: $opacity;
+    visibility: $visibility;
     -webkit-transition: visibility  .3s  linear,opacity  .3s  linear;
     transition: visibility  .3s  linear,opacity  .3s  linear;
+  }
+
+  .header-content-initial {
+    @include visibility(1, visible);
   }
   
   .header-content-panel {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility  .3s  linear,opacity  .3s  linear;
-    transition: visibility  .3s  linear,opacity  .3s  linear;
+    @include visibility(0, hidden);
   }
   
   .closed {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility  .3s  linear,opacity  .3s  linear;
-    transition: visibility  .3s  linear,opacity  .3s  linear;
+    @include visibility(0, hidden);
   }
   
   .opened {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: visibility  .3s  linear,opacity  .3s  linear;
-    transition: visibility  .3s  linear,opacity  .3s  linear;
+    @include visibility(1, visible);
   }
   
   .contact_line {
