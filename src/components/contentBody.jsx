@@ -72,22 +72,22 @@ const ContentBody = (props) => {
                 </div>
                 <div className="value_statement_logos">
                     <div className="logo">
-                        <div className="image"></div>
+                        <div className="image respect"></div>
                         <div className="title">Respect</div>
                         <div className="description">We value diversity and are committed to equality.</div>
                     </div>
                     <div className="logo">
-                        <div className="image"></div>
+                        <div className="image recognition"></div>
                         <div className="title">Recognition</div>
                         <div className="description">We treasure the contribution of our employees for the work they do and the difference they make to the company.</div>
                     </div>
                     <div className="logo">
-                        <div className="image"></div>
+                        <div className="image quality"></div>
                         <div className="title">Quality</div>
                         <div className="description">We strive for small and ongoing positive changes that can create major improvements.</div>
                     </div>
                     <div className="logo">
-                        <div className="image"></div>
+                        <div className="image cooperation"></div>
                         <div className="title">Cooperation</div>
                         <div className="description">We are committed to a culture of teamwork and collaboration.</div>
                     </div>

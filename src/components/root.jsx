@@ -10,7 +10,7 @@ const Root = () => {
             <MediaCSS>
                 <Switch>
                     <Route component={Home} exact path="/" />
-                    <Route component={About} exact path="/about" />
+                    <Route component={About} path="/about" />
                 </Switch>
             </MediaCSS>
         </div>

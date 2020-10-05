@@ -8,7 +8,7 @@ const Product = (props) => {
             <div className="title">{props.title}</div>
             <div className="description">{props.description}</div>
             <div className="learn_more bluecolored"><a href={props.website}>{props.learn_more}</a></div>
-            <div class="line"></div>
+            <div className="line"></div>
         </div>
      );
 }

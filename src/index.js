@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 import Root from './components/root';
+import ScrollToTop from './components/scrolltotop';
 
 
 ReactDOM.render(
    <BrowserRouter basename="/vmn/">
+      <ScrollToTop />
       <Root />
     </BrowserRouter>,
     document.getElementById('root')
