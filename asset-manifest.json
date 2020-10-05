@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vmn/static/css/main.6bb0ad87.chunk.css",
+    "main.css": "/vmn/static/css/main.4f236cb3.chunk.css",
     "main.js": "/vmn/static/js/main.7c9bc662.chunk.js",
     "main.js.map": "/vmn/static/js/main.7c9bc662.chunk.js.map",
     "runtime-main.js": "/vmn/static/js/runtime-main.45a6728e.js",
@@ -8,16 +8,16 @@
     "static/js/2.235d646c.chunk.js": "/vmn/static/js/2.235d646c.chunk.js",
     "static/js/2.235d646c.chunk.js.map": "/vmn/static/js/2.235d646c.chunk.js.map",
     "index.html": "/vmn/index.html",
-    "precache-manifest.ca508095f05d6d0ab2a4f732fb4f2731.js": "/vmn/precache-manifest.ca508095f05d6d0ab2a4f732fb4f2731.js",
+    "precache-manifest.982d154da62f4c9532dbd126a5d22dbf.js": "/vmn/precache-manifest.982d154da62f4c9532dbd126a5d22dbf.js",
     "service-worker.js": "/vmn/service-worker.js",
-    "static/css/main.6bb0ad87.chunk.css.map": "/vmn/static/css/main.6bb0ad87.chunk.css.map",
+    "static/css/main.4f236cb3.chunk.css.map": "/vmn/static/css/main.4f236cb3.chunk.css.map",
     "static/js/2.235d646c.chunk.js.LICENSE.txt": "/vmn/static/js/2.235d646c.chunk.js.LICENSE.txt",
     "static/media/main.css": "/vmn/static/media/white-background-hexagon.26479042.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.45a6728e.js",
     "static/js/2.235d646c.chunk.js",
-    "static/css/main.6bb0ad87.chunk.css",
+    "static/css/main.4f236cb3.chunk.css",
     "static/js/main.7c9bc662.chunk.js"
   ]
 }
