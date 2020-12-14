@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/main.css';
 import Nav from './nav';
+import {Animated} from "react-animated-css";
 import HeaderContainerPanel from './headerContainerPanel';
 import $ from 'jquery';
 
@@ -21,6 +22,7 @@ const Header = (props) => {
     // Small screen <= 500
     const HEADER_CONTAINER_HEIGHT_SMALL_OPENED = '980px';
     const HEADER_CONTAINER_HEIGHT_SMALL_CLOSED = '660px';
+    const HEADER_CONTAINER_ABOUT_HEIGHT_SMALL_CLOSED = '500px';
 
     // Small screen < 880
     const HEADER_CONTAINER_HEIGHT_OPENED = '1150px';
@@ -60,10 +62,25 @@ const Header = (props) => {
         $('.whoweare-container > .image-hexagone').css('height', $('.whoweare-container > .content').height() + 170);
     };
 
+    
     $(document).ready(function () {
         resize_container();
+        const topOfWindow = $(window).scrollTop();
+        if (topOfWindow > 1200)
+            $('.logos').show();
+
+        if(topOfWindow > 1700)
+            $('.our_management .items img').show();
+
         $( window ).resize(function() {
             resize_container();
+        });
+        $(window).scroll(function () {
+            const topOfWindow = $(window).scrollTop();
+            if (topOfWindow > 1200)
+                $('.logos').show();
+            if(topOfWindow > 1700)
+                $('.our_management .items img').show();
         });
         $('.second-button').on('click', function () {
             $('.header-content-initial').toggleClass("closed");
@@ -89,7 +106,7 @@ const Header = (props) => {
             if($('.header-content-panel').hasClass('opened'))
                 $('.header-container').css('height', HEADER_CONTAINER_HEIGHT_SMALL_OPENED);
             else
-                $('.header-container').css('height', HEADER_CONTAINER_HEIGHT_SMALL_CLOSED);
+                $('.header-container').css('height', (props.page === 'about') ? HEADER_CONTAINER_ABOUT_HEIGHT_SMALL_CLOSED : HEADER_CONTAINER_HEIGHT_SMALL_CLOSED);
 
         }else if(win_width <= 880){
             if($('.header-content-panel').hasClass('opened'))
@@ -115,15 +132,21 @@ const Header = (props) => {
             <div className={`header-container ${headerContainerClassName}`}>
                 <div className="header-content-initial">
                     <div className="content" style={hideAboutContentInitial}>
+                        
                         <div className="mission">
-                            <span>We Make&nbsp;</span>
-                            <span className="bluecolored">Visions</span>
-                            <span>Come True </span>
+                            <Animated animationIn="fadeInLeft" animationOut="slideOutRight" animationInDuration={1000} animationOutDuration={1000} isVisible={true}>
+                                <span>We Make&nbsp;</span>
+                                <span className="bluecolored">Visions</span>
+                                <span>Come True </span>
+                            </Animated>
                             <div className="tools">Develop tools, software and platforms.</div>
                             <div className="btn-tools"><a href="#our_products" className="smooth-goto">get started</a></div>
                         </div>
-                        <div className="biglogo"></div>
+                        <Animated animationIn="fadeInRight" animationInDuration={1000} animationOutDuration={1000} isVisible={true}>
+                            <div className="biglogo"></div>
+                        </Animated>
                     </div>
+
                     <div className="content" style={hideHomeContentInitial}>
                         <div className="about-header">
                             <div className="about-title">

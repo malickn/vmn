@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
 import {BrowserRouter} from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 import Root from './components/root';
 import ScrollToTop from './components/scrolltotop';
+import reducer from './components/reducer';
 
+const store = createStore(reducer);
 
 ReactDOM.render(
-   <BrowserRouter basename="/vmn/">
-      <ScrollToTop />
-      <Root />
-    </BrowserRouter>,
-    document.getElementById('root')
+   <Provider store={store}>
+      <BrowserRouter basename="/vmn/">
+         <ScrollToTop />
+         <Root />
+      </BrowserRouter>
+   </Provider>,
+   document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
